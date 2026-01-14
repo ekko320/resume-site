@@ -1836,25 +1836,28 @@ h4, h5, h6 {
     .hero-title {
         font-size: 2.2rem;
         line-height: 1.6;
-        white-space: normal;
+        white-space: normal !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        transform: none !important;
     }
 
     .title-word {
-        display: block;
+        display: block !important;
         font-size: 2rem;
         text-align: center;
+        transform: none !important;
     }
 
     .title-name {
         font-size: 3.5rem;
         margin-left: 0;
-        display: block;
+        display: block !important;
         text-align: center;
+        transform: none !important;
     }
 
     .hero-label {
@@ -2119,25 +2122,28 @@ h4, h5, h6 {
     .hero-title {
         font-size: 1.9rem;
         line-height: 1.6;
-        white-space: normal;
+        white-space: normal !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         gap: 0.5rem;
+        transform: none !important;
     }
 
     .title-word {
-        display: block;
+        display: block !important;
         font-size: 1.7rem;
         text-align: center;
+        transform: none !important;
     }
 
     .title-name {
         font-size: 3rem;
         margin-left: 0;
-        display: block;
+        display: block !important;
         text-align: center;
+        transform: none !important;
     }
 
     .visual-frame {
