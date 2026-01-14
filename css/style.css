@@ -968,23 +968,23 @@ h4, h5, h6 {
 
 .hero-title {
     font-family: 'Bebas Neue', 'Anton', 'Black Ops One', sans-serif;
-    font-size: 5.8rem;
-    line-height: 1;
-    letter-spacing: 6px;
+    font-size: 5.5rem;
+    line-height: 1.1;
+    letter-spacing: 4px;
     transform: skewX(-10deg);
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .title-word {
-    display: block;
+    display: inline;
     opacity: 0;
     transform: translateX(-50px) skewX(-10deg);
     animation: wordReveal 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .title-word:nth-child(1) { animation-delay: 0.7s; }
-.title-word:nth-child(2) { animation-delay: 0.8s; }
-.title-word:nth-child(3) { animation-delay: 0.9s; }
+.title-word:nth-child(2) { animation-delay: 0.85s; }
 
 @keyframes wordReveal {
     to {
@@ -999,10 +999,11 @@ h4, h5, h6 {
 }
 
 .title-name {
-    font-size: 7rem;
+    font-size: 6.5rem;
     color: var(--primary-red);
     text-shadow: 0 0 30px rgba(211, 47, 47, 0.8), 4px 4px 0 var(--black);
-    letter-spacing: 12px;
+    letter-spacing: 8px;
+    margin-left: 20px;
     animation: nameGlow 2s ease-in-out infinite;
 }
 
@@ -1833,8 +1834,11 @@ h4, h5, h6 {
     }
 
     .hero-title {
-        font-size: 2rem;
-        line-height: 1.3;
+        font-size: 2.2rem;
+        line-height: 1.4;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .title-word {
@@ -1842,13 +1846,9 @@ h4, h5, h6 {
     }
 
     .title-name {
-        font-size: 2.5rem;
-        display: block;
-        margin-top: 0.5rem;
-    }
-
-    .title-highlight {
-        font-size: 1.5rem;
+        font-size: 2.8rem;
+        margin-left: 8px;
+        display: inline;
     }
 
     .hero-label {
@@ -2022,16 +2022,28 @@ h4, h5, h6 {
 
     .text-block {
         padding: 0.75rem !important;
+        padding-right: 1rem !important;
         margin-bottom: 0.75rem;
+        overflow: hidden;
     }
 
     .block-label {
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .block-content {
         gap: 0.35rem;
+    }
+
+    .intro-text {
+        font-size: 1.2rem !important;
+        letter-spacing: 2px !important;
+        line-height: 1.4 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
     }
 
     .info-item {
@@ -2092,19 +2104,21 @@ h4, h5, h6 {
     }
 
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+        line-height: 1.5;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .title-word {
-        display: block;
+        display: inline;
     }
 
     .title-name {
-        font-size: 2rem;
-    }
-
-    .title-highlight {
-        font-size: 1.3rem;
+        font-size: 2.4rem;
+        margin-left: 5px;
+        display: inline;
     }
 
     .visual-frame {
