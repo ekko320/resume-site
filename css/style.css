@@ -50,21 +50,96 @@ html {
 }
 
 body {
-    /* P5R 字体系统 */
-    font-family: 'Roboto', 'Helvetica Neue', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    /* 现代字体系统 */
+    font-family: 'Montserrat', 'Roboto', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
     background: var(--p5r-black);
     color: var(--p5r-white);
     overflow-x: hidden;
-    line-height: 1.6; /* 1.5倍行间距 */
+    line-height: 1.6;
 }
 
-/* P5R 标题字体 */
+/* P5R 标题字体 - 层级化 */
 .p5r-title,
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', 'Impact', 'Arial Black', sans-serif;
+h1 {
+    font-family: 'Bebas Neue', 'Anton', 'Black Ops One', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.15em; /* 宽松间距 */
+    letter-spacing: 0.15em;
+}
+
+h2 {
+    font-family: 'Bebas Neue', 'Anton', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+h3 {
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+h4, h5, h6 {
+    font-family: 'Montserrat', 'Noto Sans SC', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ===== 增强字体样式系统 ===== */
+/* 游戏风格数字字体 */
+.gaming-number {
+    font-family: 'Black Ops One', 'Anton', cursive;
+    font-weight: 900;
+}
+
+/* 现代几何字体 */
+.geometric-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+/* 强调标题 */
+.accent-title {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* 技能等级标签 */
+.skill-level-label {
+    font-family: 'Black Ops One', 'Bebas Neue', cursive;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+}
+
+/* 任务编号样式 */
+.mission-number {
+    font-family: 'Black Ops One', 'Anton', cursive;
+    font-weight: 900;
+}
+
+/* 按钮文字增强 */
+.btn-text {
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+/* 统计数字 */
+.stat-number {
+    font-family: 'Anton', 'Black Ops One', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* 卡片标签 */
+.card-tag {
+    font-family: 'Montserrat', 'Noto Sans SC', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
 /* ===== 转场遮罩层系统 ===== */
@@ -457,11 +532,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-reveal {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Black Ops One', 'Anton', 'Bebas Neue', cursive;
     font-size: 8vw;
-    letter-spacing: 15px;
+    letter-spacing: 18px;
     color: var(--black);
     text-align: center;
+    font-weight: 900;
 }
 
 .reveal-text {
@@ -586,12 +662,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-text {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 8px;
+    font-family: 'Bebas Neue', 'Anton', 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: 9px;
     color: var(--primary-red);
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
     transform: skewX(-10deg);
+    font-weight: 700;
 }
 
 .logo-line {
@@ -616,15 +693,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
     color: var(--white);
     text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 4px;
+    font-family: 'Montserrat', 'Bebas Neue', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 5px;
     position: relative;
     padding: 8px 0;
     transition: all 0.3s ease;
     text-transform: uppercase;
     transform: skewX(-10deg);
     display: inline-block;
+    font-weight: 600;
 }
 
 .nav-link::before {
@@ -772,12 +850,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-number {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Black Ops One', 'Anton', cursive;
+    font-size: 1.8rem;
     color: var(--primary-red);
-    letter-spacing: 8px;
+    letter-spacing: 10px;
     margin-bottom: 15px;
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
+    font-weight: 900;
 }
 
 .header-title {
@@ -786,13 +865,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-en {
     display: block;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', 'Anton', 'Black Ops One', sans-serif;
     font-size: 5rem;
-    letter-spacing: 12px;
+    letter-spacing: 14px;
     color: var(--white);
     text-transform: uppercase;
     transform: skewX(-10deg);
     text-shadow: 3px 3px 0 var(--primary-red), -1px -1px 0 var(--primary-red);
+    font-weight: 700;
 }
 
 .title-cn {
@@ -850,14 +930,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-label {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 8px;
+    font-family: 'Anton', 'Bebas Neue', 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 10px;
     color: var(--primary-red);
     margin-bottom: 15px;
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
     text-transform: uppercase;
     transform: skewX(-10deg);
+    font-weight: 700;
 }
 
 .hero-divider {
@@ -886,11 +967,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 5.5rem;
+    font-family: 'Bebas Neue', 'Anton', 'Black Ops One', sans-serif;
+    font-size: 5.8rem;
     line-height: 1;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     transform: skewX(-10deg);
+    font-weight: 700;
 }
 
 .title-word {
@@ -945,9 +1027,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .action-btn {
     padding: 18px 45px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 4px;
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 5px;
     border: none;
     cursor: pointer;
     position: relative;
@@ -959,6 +1041,7 @@ h1, h2, h3, h4, h5, h6 {
     clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
     transform: skewX(-10deg);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .primary-btn {
@@ -1122,11 +1205,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prompt-text {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 8px;
+    font-family: 'Montserrat', 'Bebas Neue', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 9px;
     color: var(--gray-light);
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .prompt-arrow {
@@ -1179,15 +1263,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-label {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
-    letter-spacing: 8px;
+    font-family: 'Anton', 'Bebas Neue', 'Montserrat', sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 9px;
     color: var(--primary-red);
     margin-bottom: 25px;
     padding-bottom: 15px;
     border-bottom: 3px solid var(--primary-red);
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .block-content p {
@@ -1197,11 +1282,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-text {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: 4px;
+    font-family: 'Montserrat', 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+    letter-spacing: 5px;
     color: var(--white);
     margin-bottom: 25px;
+    font-weight: 700;
 }
 
 .about-stats {
@@ -1228,21 +1314,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-value {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 4.5rem;
+    font-family: 'Anton', 'Black Ops One', 'Bebas Neue', sans-serif;
+    font-size: 4.8rem;
     color: var(--primary-red);
     line-height: 1;
     margin-bottom: 10px;
-    text-shadow: 0 0 20px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 25px rgba(211, 47, 47, 0.6);
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 .stat-label {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 5px;
+    font-family: 'Bebas Neue', 'Montserrat', 'Anton', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 6px;
     color: var(--white);
     margin-bottom: 5px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .stat-sub {
@@ -1333,19 +1422,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-period {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
+    font-family: 'Black Ops One', 'Anton', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 6px;
     color: var(--primary-red);
     margin-bottom: 18px;
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
+    font-weight: 900;
 }
 
 .card-role {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: 3px;
+    font-family: 'Bebas Neue', 'Anton', 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    letter-spacing: 4px;
     margin-bottom: 12px;
+    font-weight: 700;
 }
 
 .card-company {
@@ -1409,10 +1500,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .panel-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: 5px;
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.3);
+    font-family: 'Bebas Neue', 'Anton', 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    letter-spacing: 6px;
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.4);
+    font-weight: 700;
 }
 
 .panel-icon {
@@ -1438,15 +1530,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-name {
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--white);
+    font-family: 'Montserrat', 'Noto Sans SC', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 .skill-percent {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Black Ops One', 'Anton', cursive;
+    font-size: 1.4rem;
     color: var(--primary-red);
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .skill-bar {
@@ -1565,11 +1661,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .field-label {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 3px;
+    font-family: 'Montserrat', 'Bebas Neue', 'Noto Sans SC', sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 4px;
     color: var(--primary-red);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .field-input {
@@ -1598,9 +1695,9 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
     color: var(--white);
     border: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 4px;
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -1610,6 +1707,7 @@ h1, h2, h3, h4, h5, h6 {
     clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
     box-shadow: 0 5px 0 var(--dark-red);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .submit-btn:hover {
@@ -1641,13 +1739,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    letter-spacing: 12px;
+    font-family: 'Bebas Neue', 'Anton', 'Montserrat', sans-serif;
+    font-size: 3.2rem;
+    letter-spacing: 14px;
     color: var(--primary-red);
     margin-bottom: 25px;
-    text-shadow: 0 0 20px rgba(211, 47, 47, 0.5);
+    text-shadow: 0 0 25px rgba(211, 47, 47, 0.6);
     transform: skewX(-10deg);
+    font-weight: 700;
 }
 
 .footer-line {
