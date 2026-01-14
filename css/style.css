@@ -1824,12 +1824,55 @@ h1, h2, h3, h4, h5, h6 {
 
     .timeline-item {
         grid-template-columns: auto 1fr;
-        gap: 1rem;
-        padding: 1rem;
+        gap: 0.75rem;
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
     }
 
     .p5r-mission-number {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* 工作经历卡片优化 */
+    .item-card {
+        padding: 0.75rem !important;
+    }
+
+    .card-period {
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .card-role {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .card-company {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .card-desc ul {
+        padding-left: 1rem;
+        margin: 0;
+    }
+
+    .card-desc li {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.35rem;
+        padding-left: 0.25rem;
+    }
+
+    .card-desc li:last-child {
+        margin-bottom: 0;
     }
 
     /* 其他元素 */
@@ -1838,7 +1881,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .section-container {
-        padding: 80px 1.5rem 3rem;
+        padding: 80px 1rem 2rem;
     }
 
     .hero-top {
@@ -1869,27 +1912,49 @@ h1, h2, h3, h4, h5, h6 {
     /* 信息卡片 */
     .info-label,
     .info-value {
-        font-size: 0.9rem;
-    }
-
-    .card-period {
         font-size: 0.85rem;
     }
 
-    .card-role {
-        font-size: 1.1rem;
+    .text-block {
+        padding: 0.75rem !important;
+        margin-bottom: 0.75rem;
     }
 
-    .card-company {
-        font-size: 0.95rem;
-    }
-
-    .card-desc {
+    .block-label {
         font-size: 0.9rem;
+        margin-bottom: 0.5rem;
     }
 
-    .card-desc li {
-        font-size: 0.9rem;
+    .block-content {
+        gap: 0.35rem;
+    }
+
+    .info-item {
+        padding: 0.35rem 0;
+    }
+
+    /* 统计卡片 */
+    .stat-card {
+        padding: 1rem !important;
+    }
+
+    /* 技能面板 */
+    .skill-panel {
+        padding: 0.75rem !important;
+    }
+
+    .panel-header {
+        margin-bottom: 0.75rem;
+    }
+
+    .skill-bar-wrapper {
+        margin-bottom: 0.6rem;
+    }
+
+    /* 联系卡片 */
+    .p5r-contact-card {
+        padding: 0.75rem !important;
+        margin-bottom: 0.5rem;
     }
 
     /* 导航 */
@@ -2024,63 +2089,151 @@ h1, h2, h3, h4, h5, h6 {
 
     /* 技能面板 */
     .skill-panel {
-        padding: 1rem;
+        padding: 0.65rem !important;
     }
 
     .panel-title {
-        font-size: 1rem;
-    }
-
-    .p5r-skill-level {
-        font-size: 1.2rem;
-    }
-
-    .skill-name {
         font-size: 0.9rem;
     }
 
-    .skill-percent {
+    .p5r-skill-level {
+        font-size: 1rem;
+        padding: 0.15rem 0.35rem;
+    }
+
+    .skill-name {
         font-size: 0.85rem;
+    }
+
+    .skill-percent {
+        font-size: 0.75rem;
+    }
+
+    .skill-bar-wrapper {
+        margin-bottom: 0.5rem;
     }
 
     /* 文本块 */
     .text-block {
-        padding: 1rem;
+        padding: 0.65rem !important;
+        margin-bottom: 0.5rem;
     }
 
     .block-label {
-        font-size: 1rem;
+        font-size: 0.85rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .block-content {
+        gap: 0.25rem;
+    }
+
+    .info-item {
+        padding: 0.25rem 0;
     }
 
     /* 时间线 */
+    .timeline-item {
+        padding: 0.65rem;
+        margin-bottom: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .p5r-mission-number {
+        font-size: 1rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .item-card {
+        padding: 0.65rem !important;
+    }
+
     .card-period {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
     }
 
     .card-role {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
     }
 
     .card-company {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .card-desc {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .card-desc ul {
+        padding-left: 0.75rem;
     }
 
     .card-desc li {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-bottom: 0.25rem;
+        padding-left: 0.2rem;
+    }
+
+    /* 统计卡片 */
+    .stat-card {
+        padding: 0.85rem !important;
+    }
+
+    .stat-value {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .stat-sub {
+        font-size: 0.65rem;
     }
 
     /* 联系方式 */
+    .p5r-contact-card {
+        padding: 0.65rem !important;
+        margin-bottom: 0.4rem;
+    }
+
+    .p5r-contact-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+
     .info-label {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .info-value {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     /* 页脚 */
     .footer-text {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    /* 表单 */
+    .field-label {
+        font-size: 0.8rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .field-input {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.65rem;
+    }
+
+    .submit-btn {
+        padding: 0.75rem 1rem;
     }
 
     /* 表单 */
