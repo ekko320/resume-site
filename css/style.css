@@ -1824,9 +1824,9 @@ h4, h5, h6 {
 
     /* 首页布局 */
     .hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 80px 1.5rem 2rem;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .hero-content {
@@ -1859,13 +1859,14 @@ h4, h5, h6 {
     .hero-visual {
         display: flex;
         justify-content: center;
-        margin-top: 2rem;
+        order: -1;
+        margin-bottom: 1rem;
     }
 
     .visual-frame {
         width: 150px;
         height: 150px;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .frame-effects {
