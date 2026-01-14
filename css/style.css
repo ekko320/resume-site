@@ -1703,37 +1703,15 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
 
-    .hero-title {
-        font-size: 3rem;
+    .hero-container {
+        flex-direction: column-reverse;
+        padding: 100px 1.5rem 2rem;
     }
 
-    .title-name {
-        font-size: 4rem;
+    .hero-content {
+        text-align: center;
     }
 
-    .title-en {
-        font-size: 3rem;
-    }
-
-    .visual-frame {
-        width: 300px;
-        height: 300px;
-    }
-
-    .skills-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1742,13 +1720,165 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 3rem;
     }
 
-    .title-en {
-        font-size: 2rem;
-        letter-spacing: 6px;
+    .visual-frame {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+
+    .frame-effects {
+        display: none;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+    }
+
+    .p5r-phantom-logo {
+        display: none;
     }
 
     .section-container {
-        padding: 80px 20px 60px;
+        padding: 100px 1.5rem 3rem;
+    }
+
+    .hero-top {
+        justify-content: center;
+    }
+
+    .hero-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .title-name {
+        font-size: 2.5rem;
+    }
+
+    .title-word {
+        display: block;
+    }
+
+    .visual-frame {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle,
+    .hero-slogan {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .slogan-separator {
+        display: none;
+    }
+
+    .p5r-contact-card {
+        padding: 1rem;
+    }
+
+    .p5r-contact-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .skill-panel {
+        padding: 1rem;
+    }
+
+    .text-block {
+        padding: 1rem;
+    }
+}
+
+/* 移动端导航菜单样式 */
+.nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: var(--p5r-black);
+    padding: 5rem 2rem 2rem;
+    border-left: 3px solid var(--p5r-primary-red);
+    z-index: 999;
+}
+
+.nav-menu.open .nav-link {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--p5r-gray-medium);
+}
+
+/* 移动端触摸优化 */
+@media (max-width: 768px) {
+    .p5r-interactive,
+    .p5r-skill-card,
+    .p5r-mission-item,
+    .p5r-contact-card {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* 增大点击区域 */
+    .nav-link {
+        padding: 1rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .action-btn {
+        min-height: 48px;
+    }
+
+    /* 禁用 hover 效果在移动端 */
+    .p5r-interactive:hover {
+        animation: none;
     }
 }
 
