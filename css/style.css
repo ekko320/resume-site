@@ -1013,7 +1013,7 @@ h4, h5, h6 {
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: var(--gray-light);
+    color: var(--off-white);
     margin-bottom: 40px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -1250,10 +1250,12 @@ h4, h5, h6 {
 .text-block {
     background: linear-gradient(135deg, var(--gray-dark) 0%, var(--gray) 100%);
     padding: 50px;
+    padding-right: 60px;
     clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
     border: 3px solid transparent;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .text-block:hover {
@@ -1276,18 +1278,21 @@ h4, h5, h6 {
 }
 
 .block-content p {
-    color: var(--gray-light);
+    color: var(--off-white);
     line-height: 2;
     margin-bottom: 20px;
 }
 
 .intro-text {
     font-family: 'Montserrat', 'Bebas Neue', sans-serif;
-    font-size: 2.3rem;
-    letter-spacing: 5px;
+    font-size: 2rem;
+    letter-spacing: 4px;
     color: var(--white);
     margin-bottom: 25px;
     font-weight: 700;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .about-stats {
@@ -1441,9 +1446,10 @@ h4, h5, h6 {
 
 .card-company {
     font-size: 1.1rem;
-    color: var(--gray-light);
+    color: var(--off-white);
     margin-bottom: 25px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .card-desc ul {
@@ -1454,7 +1460,7 @@ h4, h5, h6 {
     padding: 10px 0;
     padding-left: 30px;
     position: relative;
-    color: var(--gray-light);
+    color: var(--off-white);
     line-height: 1.8;
     font-size: 1rem;
 }
@@ -1631,7 +1637,7 @@ h4, h5, h6 {
 }
 
 .info-details p {
-    color: var(--gray-light);
+    color: var(--off-white);
     font-size: 1.1rem;
 }
 
