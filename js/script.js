@@ -5,20 +5,28 @@ function playIntroSequence() {
     const intro = document.getElementById('introSequence');
     const frames = intro.querySelectorAll('.intro-frame');
 
+    // 检测是否为移动端
+    const isMobile = window.innerWidth <= 768;
+
+    // 移动端使用更快的动画
+    const frameDelay = isMobile ? 400 : 1000;
+    const lastFrameDelay = isMobile ? 600 : 1200;
+    const fadeOutDelay = isMobile ? 200 : 500;
+
     let delay = 0;
     frames.forEach((frame, index) => {
         setTimeout(() => {
             frame.classList.add('active');
         }, delay);
-        delay += index === 2 ? 1200 : 1000;
+        delay += (index === 2) ? lastFrameDelay : frameDelay;
     });
 
     setTimeout(() => {
         intro.classList.add('hidden');
         setTimeout(() => {
             intro.style.display = 'none';
-        }, 500);
-    }, delay + 500);
+        }, fadeOutDelay);
+    }, delay + fadeOutDelay);
 }
 
 // 页面加载完成后播放开场动画
@@ -26,7 +34,7 @@ window.addEventListener('load', () => {
     // 立即激活首页，避免黑屏
     document.getElementById('section-home').classList.add('active');
 
-    // 播放开场动画（可选，如果不想要可以注释掉）
+    // 播放开场动画
     playIntroSequence();
 });
 
