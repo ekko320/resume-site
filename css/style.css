@@ -1857,12 +1857,14 @@ h4, h5, h6 {
     }
 
     .hero-visual {
-        display: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
     }
 
     .visual-frame {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         margin-bottom: 1rem;
     }
 
