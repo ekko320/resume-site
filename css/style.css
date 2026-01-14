@@ -1850,6 +1850,7 @@ h4, h5, h6 {
         font-size: 2rem;
         text-align: center;
         transform: none !important;
+        order: 1;
     }
 
     .title-name {
@@ -1858,6 +1859,7 @@ h4, h5, h6 {
         display: block !important;
         text-align: center;
         transform: none !important;
+        order: 2;
     }
 
     .hero-label {
@@ -2136,6 +2138,7 @@ h4, h5, h6 {
         font-size: 1.7rem;
         text-align: center;
         transform: none !important;
+        order: 1;
     }
 
     .title-name {
@@ -2144,6 +2147,7 @@ h4, h5, h6 {
         display: block !important;
         text-align: center;
         transform: none !important;
+        order: 2;
     }
 
     .visual-frame {
